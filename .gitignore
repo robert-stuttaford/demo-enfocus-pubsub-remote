@@ -1,0 +1,5 @@
+.crossover-cljs
+.lein*
+classes
+lib
+target
