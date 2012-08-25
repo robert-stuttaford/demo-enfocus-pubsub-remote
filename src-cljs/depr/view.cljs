@@ -5,7 +5,7 @@
 (em/defsnippet item-template
   "templates/templates.html" [:#item-template]
   [item]
-  [:dt] (em/content (:id item))
+  [:dt] (em/content (str (:id item)))
   [:dd] (em/content (:title item)))
 
 (em/defsnippet item-container-template

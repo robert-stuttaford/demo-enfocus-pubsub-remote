@@ -3,3 +3,5 @@
 classes
 lib
 target
+*.js
+*.sublime-*

@@ -3,5 +3,4 @@
 
 (defn make-item
 	[num]
-	(util/log "make-item invoked with " num)
 	{:id num :title (str "Item #" num)})

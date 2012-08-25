@@ -1,7 +1,22 @@
 # Demo: Enfocus, Shoreleave's PubSub and Remotes, and cljsbuild's Crossovers
 
-This demo shows how to use common model code (in src/depr/crossovers/*) from both the server and the ClojureScript client.
+## What's in the box
 
-It also shows how to use `shoreleave-remote` to interact with the server (provided by Noir, in this case), and how to use `shoreleave-pubsub` along with `enfocus` and html templates to declaratively populate the view and capture user input.
+* Noir on the back
+* ClojureScript on the client
+* Shoreleave's Remotes to move pure Clojure data between the two
+* Enfocus to build views client-side from plain html templates (no special interleaved template syntax)
+* Shoreleave's PubSub to declaratively bind views and model/remotes code together in a loosely coupled fashion
+* Model code is shared between client and server, using cljsbuild's crossovers
 
 Feedback most welcome.
+
+## How to run
+
+Using either Leiningen 1 or 2:
+
+```
+lein deps
+lein cljsbuild once
+lein run
+```

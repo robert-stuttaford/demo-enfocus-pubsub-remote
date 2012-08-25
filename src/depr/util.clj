@@ -1,6 +1,6 @@
 (ns depr.util
-  (:require [clojure.pprint :as pp]))
+  (:require [taoensso.timbre :as timbre]))
 
 (defn log
   [& vs]
-  (pp/pprint vs))
+  (timbre/info vs))

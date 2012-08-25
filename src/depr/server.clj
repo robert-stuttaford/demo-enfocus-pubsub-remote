@@ -12,6 +12,7 @@
 
 (server/add-middleware ring.middleware.gzip/wrap-gzip)
 (server/add-middleware ring.middleware.file-info/wrap-file-info)
+;; This isn't working right now.
 #_(server/add-middleware ring.middleware.anti-forgery/wrap-anti-forgery)
 
 (defn -main [& m]
