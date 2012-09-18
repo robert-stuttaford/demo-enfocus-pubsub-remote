@@ -28,6 +28,6 @@
   (pubsub/subscribe remotes/items-loaded-topic update-item-count!)
   (pubsub/subscribe remotes/items-loaded-topic views/render-items!)
   (pubsub/subscribe remotes/item-added-topic item-added!)
-  (views/init-views! :add-item-fn add-item!)
   (em/wait-for-load
-   (remotes/get-items)))
+    (views/init-views! :add-item-fn add-item!)
+    (remotes/get-items)))
